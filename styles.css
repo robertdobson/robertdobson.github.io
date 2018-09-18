@@ -1,15 +1,23 @@
 @charset "utf-8";
 /* CSS Document */
 /* 
-  CIS166AA: Chapter 1 Case Project Website
+  CIS166AA: Chapter 2 Case Project Website
   Author: Robert Dobson
-  Date: 09/08/2018
+  Date: 09/12/2018
 */
 body {
 	background-color: #191919;
 	margin: 0px;
 	color: antiquewhite;
 	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif"
+}
+fieldset {
+	width: 60%;
+	margin: auto;
+}
+fieldset input {
+	text-align: center;
+	margin: auto;
 }
 footer {
 	font-size: 0.7em;
@@ -25,7 +33,7 @@ h2 {
 	font-size: 3em;
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
-	
+	text-align: center;
 }
 nav{
 	/*Horizontal Nav bar*/
@@ -60,11 +68,6 @@ p {
 	text-align: center;
 	padding: 0.5em;
 }
-.scrolling-wrapper-flexbox {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-}
 .card {
     flex: 0 0 auto;
 	 background-color: #191919;
@@ -72,6 +75,14 @@ p {
     min-height: 467px;
 	 max-height: 25%;
 }
+.input-box {
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+}
 .scrolling-wrapper-flexbox {
-  -webkit-overflow-scrolling: touch;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
 }

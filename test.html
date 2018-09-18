@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- 
+	      CIS166AA: Chapter 2 Case Project Website
+	      Author: Robert Dobson
+	      Date: 09/12/2018
+      -->
+      <title>JavaScript Testing Bench!!!</title>
+      <meta charset="utf-8">
+      <meta name="viewport" 
+      content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="styles.css">
+      <script src="modernizr.custom.05819.js"></script>
+   </head>
+   <body>
+		<nav>
+		   <!--Nav Bar-->
+		   <ul>
+			   <li><a href="index.html">Home</a></li>
+			   <li><a href="mammals.html">Mammals</a></li>
+			   <li><a href="birds.html">Birds</a></li>
+			   <li><a href="test.html">JavaScript</a></li>
+		   </ul>
+		</nav>
+		<header>
+			<h2>JavaScript Test Bench!!!</h2>
+		</header>
+		   <p>This page will only temporarily fill in for the Reptiles page to satisfy the requirements for assignment #2.</p>
+		   <p>The form will accept a user input, and a function will process the input and display results.</p>
+			<form id="calculationform">
+				<fieldset>
+					<legend><span>Input Box</span></legend>
+					<p>Number of Thing # Ones (each is worth 500):</p>
+					<div class="input-box"><input type="number" min="1" id="thingOne" value="2"/></div>
+					<p>Number of Thing # Twos (each is worth 250):</p>
+					<div class="input-box"><input type="number" min="0" id="thingTwo" value="0"/></div>
+					<p>Some additional figure (add 100 to the value for each Thing):</p>
+					<div class="input-box"><input type="checkbox" id="someModifier"/></div>
+				</fieldset>
+				<fieldset>
+					<legend><span>Total Value</span></legend>
+					<p>Your result is: <span id="result"></span></p>
+				</fieldset>
+			</form>
+		<!-- This script links to the JavaScript file to call for "Lights! Camera! ACTION!!!" --> 
+      <script src="test.js"></script> 
+      <script>window.addEventListener("load", resetForm, false);</script>  
+	</body> 
+</html>
