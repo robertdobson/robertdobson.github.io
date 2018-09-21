@@ -1,0 +1,96 @@
+@charset "utf-8";
+/* CSS Document */
+/* 
+  CIS166AA: Chapter 3 Case Project Website
+  Author: Robert Dobson
+  Date: 09/19/2018
+*/
+body {
+	background-color: #191919;
+	margin: 0px;
+	color: antiquewhite;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif"
+}
+fieldset {
+	width: 60%;
+	margin: auto;
+}
+fieldset input {
+	text-align: center;
+	margin: auto;
+}
+footer {
+	font-size: 0.7em;
+}
+h1 {
+	font-size: 4.5em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	text-align: center;	
+}
+h2 {
+	font-size: 3em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	text-align: center;
+}
+nav{
+	/*Horizontal Nav bar*/
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background-color: transparent;
+	border-bottom: 1px;
+	border-style: solid;
+	border-color: #191919;
+}
+nav li{
+	/*Side by side nav elements*/
+	display: inline;
+}
+nav a{
+	display: inline-block;
+	padding-left: 5%;
+	padding-right: 5%;
+	color: antiquewhite;
+	text-decoration: none;
+	font-size: 24px;
+	font-weight: bold;
+}
+nav a:hover{
+	/*Change text color upon mouse hover*/
+	color: #7fc0fb;
+}
+p {
+	font-size: 1.5em;
+	text-align: center;
+	padding: 0.5em;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.card {
+    flex: 0 0 auto;
+	 background-color: #191919;
+    min-width: 33%;
+    min-height: 467px;
+	 max-height: 25%;
+}
+.input-box {
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+}
+.scrolling-wrapper-flexbox {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+}
+#bigText {
+	font-size: 12em;
+	padding-top: 100px;
+	padding-bottom: 0px;
+	margin: 0;
+	text-align: center;
+}
