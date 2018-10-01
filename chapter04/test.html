@@ -26,18 +26,18 @@
 		<header>
 			<h2>JavaScript Test Bench!!!</h2>
 		</header>
-		   <p>This page will only temporarily fill in for the Reptiles page to satisfy the requirements for assignment #4. The form has a try/catch block validating the input for Thing One that will throw errors to a message in the Total Value box at the bottom of the page.</p>
+		   <p>This page will only temporarily fill in for the Reptiles page to satisfy the requirements for assignment #4. The form has a try/catch block validating the input for Thing One and Thing Two that will throw errors to a message in the Total Value box at the bottom of the page.</p>
 			<form id="calculationform">
 				<fieldset>
 					<legend><span>Input Box</span></legend>
 					<p>Number of Thing # Ones (each is worth 500):</p>
 					<div class="input-box"><input type="text" id="thingOne" value="2"/></div>
 					<p>Number of Thing # Twos (each is worth 250):</p>
-					<div class="input-box"><input type="number" min="0" id="thingTwo" value="0"/></div>
+					<div class="input-box"><input type="text" id="thingTwo" value="0"/></div>
 				</fieldset>
 				<fieldset>
 					<legend><span>Total Value</span></legend>
-					<p ><span id="errorMessage"></span><span id="result"></span></p>
+					<p><span id="errorMessage"></span><span id="result"></span><br><span id="errorMessage2"></span></p>
 				</fieldset>
 			</form>
 		<!-- This script links to the JavaScript file to call for "Lights! Camera! ACTION!!!" --> 

@@ -31,20 +31,32 @@ function resetForm() {
    createEventListeners();
 }
 
-/* verify thingOne text box entry is a positive number */
+// verify thingOne and thingTwo text box entries are a positive number
 function verifyPositiveAndNumeric() {
 	document.getElementById("errorMessage").innerHTML = ""; // Clear any previous error messages
-	var x;
-	x = document.getElementById("thingOne").value; // Get and assign value of thingOne to x;
+	document.getElementById("errorMessage2").innerHTML = "";
+	var x = document.getElementById("thingOne").value; // Get and assign values of thingOne and thingTwo to x and y;
+	var y = document.getElementById("thingTwo").value;
 	try {                                          // Try the following;
       if (x === "") throw "is empty!";            // Check if field is empty
       if(isNaN(x)) throw "is not a number!";      // Check if field is not a number
       x = Number(x);
 		if(x < 1) throw "must be 1 or higher!";     // Enforce Thing One entry to be 1 or higher
    }
-	catch(err) {
+	catch(err) {  // If an entry error is caught, execute the following statements.
 		thingOne.value = ""; // remove erroneous entry from input box
 		document.getElementById("errorMessage").innerHTML = "Thing One entry " + err; // Display thrown error message
+		document.getElementById("result").innerHTML = ""; // Clear previous result field
+   }
+	try {                                          // Try the following;
+      if (y === "") throw "is empty!";            // Check if field is empty
+      if(isNaN(y)) throw "is not a number!";      // Check if field is not a number
+      y = Number(y);
+		if(y < 0) throw "must be 0 or higher!";     // Enforce Thing Two entry to be 1 or higher
+   }
+	catch(err) {  // If an entry error is caught, execute the following statements.
+		thingTwo.value = ""; // remove erroneous entry from input box
+		document.getElementById("errorMessage2").innerHTML = "Thing Two entry " + err; // Display thrown error message
 		document.getElementById("result").innerHTML = ""; // Clear previous result field
    }
 }
