@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- 
+	      CIS166AA: Chapter 5 Case Project Website
+	      Author: Robert Dobson
+	      Date: 10/5/2018
+      -->
+      <title>Web Security</title>
+      <meta charset="utf-8">
+      <meta name="viewport" 
+      content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="styles.css">
+      <script src="modernizr.custom.05819.js"></script>
+   </head>
+   <body>
+      <nav> 
+         <!--Nav Bar-->
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="mammals.html">Mammals</a></li>
+            <li><a href="birds.html">Birds</a></li>
+            <li><a href="test.html">JavaScript</a></li>
+         </ul>
+      </nav>
+      <header>
+         <h2>Web Security</h2>
+      </header>
+      <p class="smallerP">This page will only temporarily fill in for the Reptiles page to satisfy the requirements for assignment #5.</p>
+      <div class="spacer"></div>
+      <p class="smallerP">Everyone should try to learn some practical information to enhance their security online. Check some of the following links for more information.</p>
+      <ol>
+         <li><a href="https://www.wikihow.com/Be-Safe-on-the-Internet" target="_blank">wikiHow: How to be Safe on the Internet</a></li>
+         <p class="smallerP">WikiHow gives concise pointers, which is what wikiHow does best, on internet safety.</p>
+         <li><a href="https://www.secjuice.com/how-to-use-the-internet-safely/" target="_blank">Secjuice: How to Use the Internet Safely &amp Privately</a></li>
+         <p class="smallerP">Secjuice is the only non-profit, independent and volunteer led publication in the information security space.</p>
+         <li><a href="https://teknologya.com/10-quick-tips-to-surf-internet-safe-and-secure/" target="_blank">Teknologya: How to use the internet safely and wisely in 2018</a></li>
+         <p class="smallerP">Teknologya provides all the latest news updates about smartphones, android,windows, science, technology and much more.</p>
+      </ol>
+      <div class="spacer"></div>
+      <p class="smallerP">Did you know your browser can give away information without your permission? The following is information about your computer system.</p>
+      <table style="width:60%">
+         <tr>
+            <th><span class="highlight">Object property:</span></th>
+            <th><span class="highlight">Description:</span></th>
+            <th><span class="highlight">Information reported by your browser:</span></th>
+         </tr>
+         <tr>
+            <td>screen.colorDepth</td>
+            <td>Your screen's bit depth</td>
+            <td id="0"></td>
+         </tr>
+         <tr>
+            <td>navigator.platform</td>
+            <td>Your operating system</td>
+            <td id="1"></td>
+         </tr>
+         <tr>
+            <td>navigator.userAgent</td>
+            <td>Your browser compatibility</td>
+            <td id="2"></td>
+         </tr>
+         <tr>
+            <td>screen.width</td>
+            <td>Height of your display</td>
+            <td id="3"></td>
+         </tr>
+         <tr>
+            <td>screen.height</td>
+            <td>Width of your display</td>
+            <td id="4"></td>
+         </tr>
+         <tr>
+            <td>navigator.geolocation</td>
+            <td>Your current location</td>
+            <td id="5"></td>
+         </tr>
+      </table>
+      <div class="spacer"></div>
+      <p class="smallerP">A spooky example of how your location can be found without your consent.<br>If the following isn't displaying information very close to your location, then you're probably using a VPN. I <b>highly</b> recommend the regular use of a VPN.</p>
+      <div class="centereddiv">State: <span id="state"></span> <br>
+         City: <span id="city"></span> <br>
+         Postal: <span id="postal"></span> <br>
+         Latitude: <span id="latitude"></span> <br>
+         Longitude: <span id="longitude"></span> <br>
+         IP: <span id="IPv4"></span></div>
+      <!-- This script links to the JavaScript file to call for "Lights! Camera! ACTION!!!" --> 
+      <script src="test.js"></script> 
+      <script>window.addEventListener("load", getBrowserProperties, false);</script>
+   </body>
+</html>
