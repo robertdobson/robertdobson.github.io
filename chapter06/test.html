@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- 
+			CIS166AA: Chapter 6 Case Project Website
+			Author: Robert Dobson
+			Date: 10/15/2018
+      -->
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=page-width, initial-scale=1.0">
+      <title>Form Validation</title>
+      <link rel="stylesheet" href="styles.css" />
+      <script src="modernizr.custom.65897.js"></script>
+   </head>
+   <body>
+      <header>
+         <div>
+            <nav>
+               <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="mammals.html">Mammals</a></li>
+                  <li><a href="birds.html">Birds</a></li>
+                  <li><a href="test.html">JavaScript</a></li>
+               </ul>
+            </nav>
+         </div>
+      </header>
+      <h2>Form Validation</h2>
+      <p class="smallerP">This page temporarily fills in for the Reptiles page to meet the requirements for the Chapter #6 assignment, which states that it requires "three of the following field types: check boxes, text boxes, option buttons, selection lists, and text areas. Then, program validation for your form ensuring that users enter values or make selections in all fields, and verifying at least one other aspect of at least one of the fields. Provide appropriate feedback to users when the form fails validation."</p>
+      <p class="smallerP">All fields are required.</p>
+      <form novalidate>
+         <fieldset>
+            <div>
+               <label for="name">Enter Name:</label>
+            </div>
+            <div class="leftspace">
+               <input type="text" id="name" required="required">
+            </div>
+            <div class="spacer"></div>
+            <div>
+               <label for="email">Enter Email:</label>
+            </div>
+            <div class="leftspace">
+               <input type="email" id="email" required="required">
+            </div>
+            <div class="spacer"></div>
+         </fieldset>        
+         <fieldset>
+            <div>
+               <label for="selectionlist">Choose from selection list:</label>
+            </div>
+            <div class="spacer"></div>
+            <div class="leftspace">
+               <select id="selectionlist" name="selectionlist" required="required">
+                  <option value="earth">Earth</option>
+                  <option value="water">Water</option>
+                  <option value="wind">Wind</option>
+                  <option value="fire">Fire</option>
+               </select>
+            </div>            
+            <div class="spacer"></div>
+            </fieldset>
+         <fieldset>
+            <div>
+               <label for="radiobutton">Choose a radio button:</label>
+            </div>
+            <div class="spacer"></div>
+            <div class="leftspace">
+               <input type="radio" name="radiobutton" id="acdc" value="acdc"/>
+               <label for="acdc">AC/DC</label>
+               <input type="radio" name="radiobutton" id="metallica" value="metallica"/>
+               <label for="metallica">Metallica</label>
+            </div>
+            <div class="spacer"></div>
+            <div class="leftspace">
+               <input type="submit" value="Submit" id="contactbutton">
+            </div>
+         </fieldset>
+      </form>
+      <footer>
+         <p>© 2018 Robert Dobson</p>
+      </footer>
+      <script src="test.js"></script>
+   </body>
+</html>
