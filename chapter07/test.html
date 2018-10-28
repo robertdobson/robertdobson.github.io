@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- 
+			CIS166AA: Chapter 7 Case Project Website
+			Author: Robert Dobson
+			Date: 10/26/2018
+      -->
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=page-width, initial-scale=1.0">
+      <title>Form Validation</title>
+      <link rel="stylesheet" href="styles.css" />
+      <script src="modernizr.custom.65897.js"></script>
+   </head>
+   <body>
+      <header>
+         <div>
+            <nav>
+               <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="mammals.html">Mammals</a></li>
+                  <li><a href="birds.html">Birds</a></li>
+                  <li><a href="test.html">JavaScript</a></li>
+               </ul>
+            </nav>
+         </div>
+      </header>
+      <h2>Calculating Elapsed Time</h2>
+      <p class="smallerP">This page temporarily fills in for the Reptiles page to meet the requirements for the Chapter #7 assignment, which states "include a page that calculates the time elapsed since a date entered by a user. The page should include a form that allows users to enter a day,month, and year. The page should then calculate and display the elapsed time in years, months, and days. Note that your program must include code to convert day values in excess of 31 into months, and months in excess of 12 into years."</p>
+      <div class="spacer"></div>
+      <p class="smallerP">Please select a date before tomorrow. It is assumed that calculation of difference between dates is measured between 00:00 local time of the selected day and 00:00 local time of the current day.</p>
+      <div class="centereddiv">
+         <input type="date" onchange="validateUserSelection()" id="myDate" value="">
+      </div>
+      <p class="smallerP">Click the button to show elapsed time from chosen date.</p>
+      <div class="centereddiv">
+         <button id="submit" onclick="establishDiffs()">Calculate</button>
+      </div>
+      <h2>
+         <div class="timer"> <span id="years">0</span> year(s) <span id="months">0</span> month(s) <span id="days">0</span> day(s) <!--<span id="hours">0</span> hour(s) <span id="minutes">0</span> minute(s) <span id="seconds">0</span> seconds.--> </div>
+      </h2>
+      <footer>
+         <p>© 2018 Robert Dobson</p>
+      </footer>
+      <script src="test.js"></script>     
+   </body>
+</html>
