@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- 
+			CIS166AA: Chapter 8 Case Project Website
+			Author: Robert Dobson
+			Date: 10/28/2018
+      -->
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=page-width, initial-scale=1.0">
+      <title>Chapter 8</title>
+      <link rel="stylesheet" href="styles.css" />
+      <script src="modernizr.custom.65897.js"></script>
+   </head>
+   <body>
+      <header>
+         <div>
+            <nav>
+               <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="mammals.html">Mammals</a></li>
+                  <li><a href="birds.html">Birds</a></li>
+                  <li><a href="test.html">JavaScript</a></li>
+               </ul>
+            </nav>
+         </div>
+      </header>
+      <h2>Working with Strings and Arrays</h2>
+      <p class="smallerP">This page temporarily fills in for the Reptiles page to meet the requirements for the Chapter #8 assignment, which states "Enhance the feedback form in your project to enable users to choose one or more options from a list of at least five options. Include code that adds user selections to either an array or an object, and ensure that if a user deselects one of the options, it is removed from the array or object. Add code to convert the array or object to a string."</p>
+      <p class="smallerP">Select/deselect some items from the checkboxes to add/remove them from the array.</p>
+         <table>
+               <tr>          
+               <td>
+            <table>
+               <tr>
+                  <td><input type="checkbox" id="dog" value="Dog" name="arrayItems" />
+                     <label for="dog" id="dogLabel">Dog</label></td>
+                  <td><input type="checkbox" id="cat" value="Cat" name="arrayItems" />
+                     <label for="cat" id="catLabel">Cat</label></td>
+                  <td><input type="checkbox" id="bat" value="Bat" name="arrayItems" />
+                     <label for="bat" id="batLabel">Bat</label></td>
+               </tr>
+               <tr>
+                  <td><input type="checkbox" id="rat" value="Rat" name="arrayItems" />
+                     <label for="rat" id="ratLabel">Rat</label></td>
+                  <td><input type="checkbox" id="hat" value="Hat" name="arrayItems" />
+                     <label for="hat" id="hatLabel">Hat</label></td>
+                  <td><input type="checkbox" id="mat" value="Mat" name="arrayItems" />
+                     <label for="mat" id="matLabel">Mat</label></td>
+                  <td>
+                  <td><input type="button" onclick="convertToString()" id="createBtn" value="Convert Array to String" /></td>
+                  </td>            
+                  </tr>            
+               <tr>
+                  <td><div id="arraySection">
+                        <h4>Data items added/removed to/from array:</h4>
+                        <ul id="arrayItems">
+                        </ul>
+                     </div></td>
+               </tr>
+            </table>
+               </td>
+            </tr>
+         </table>
+      <footer >
+         <p id="stringResult">After adding items, click button to see Array converted to String here.</p>
+      </footer>
+      <script src="test.js"></script>
+   </body>
+</html>

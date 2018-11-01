@@ -1,0 +1,147 @@
+@charset "utf-8";
+/* CSS Document */
+/* 
+  CIS166AA: Chapter 8 Case Project Website
+  Author: Robert Dobson
+  Date: 10/28/2018
+*/
+a {
+	color: yellowgreen;
+	text-decoration: none;
+	font-size: 1.2em;
+}
+a:hover {
+	color: #7fc0fb;
+}
+body {
+	background-color: #191919;
+	margin: 0px;
+	color: antiquewhite;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif"
+}
+div.centereddiv {
+	text-align: center;
+	font-size: 1.2em;
+	/*padding-bottom: 5%;*/
+}
+div.leftspace {
+	padding-left: 1%;
+}
+div.spacer {
+	margin: 4%;
+}
+fieldset {
+	width: 50%;
+	margin: auto;
+}
+fieldset input {
+	text-align: center;
+	margin: auto;
+}
+footer {
+	font-size: 0.9em;
+	position:absolute;
+   bottom:0;
+   width:100%;
+   height:80px;   /* Height of the footer */
+}
+h1 {
+	font-size: 4.5em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	text-align: center;
+	
+}
+h2 {
+	font-size: 3em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	text-align: center;
+}
+label {
+	padding: 1%;
+}
+nav{
+	/*Horizontal Nav bar*/
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background-color: transparent;
+	border-bottom: 1px;
+	border-style: solid;
+	border-color: #191919;
+}
+nav li{
+	/*Side by side nav elements*/
+	display: inline;
+}
+nav a{
+	display: inline-block;
+	padding-left: 5%;
+	padding-right: 5%;
+	color: antiquewhite;
+	text-decoration: none;
+	font-size: 24px;
+	font-weight: bold;
+}
+nav a:hover{
+	/*Change text color upon mouse hover*/
+	color: #7fc0fb;
+}
+ol {
+	text-align: center;
+}
+p {
+	font-size: 1.5em;
+	text-align: center;
+	padding: 0.5em;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+p.smallerP {
+	font-size: 1.2em;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+table {
+	table-layout: fixed;
+	width: 65%;
+	border: .5em transparent;
+	border-collapse: collapse;
+	padding: .7em;
+	margin-left: 15%;
+}
+th {
+	font-size: 1.2em;
+	text-align: justify;
+	padding: .7em;
+}
+
+td {
+	width: 40%;
+	font-size: 1em;
+	padding: .7em;
+	/*column-width: 10%;*/
+}
+.card {
+    flex: 0 0 auto;
+	 background-color: #191919;
+    min-width: 33%;
+    min-height: 467px;
+	 max-height: 25%;
+}
+.errorMsg {
+	font-size: 1em;
+}
+.input-box {
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+}
+.scrolling-wrapper-flexbox {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+}
