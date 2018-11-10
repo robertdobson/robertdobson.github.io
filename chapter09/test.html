@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- 
+			CIS166AA: Chapter 9 Case Project Website
+			Author: Robert Dobson
+			Date: 11/6/2018
+      -->
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=page-width, initial-scale=1.0">
+      <title>Code Injection Defense</title>
+      <link rel="stylesheet" href="styles.css" />
+   </head>
+   <body>
+      <header>
+         <div>
+            <nav>
+               <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="mammals.html">Mammals</a></li>
+                  <li><a href="birds.html">Birds</a></li>
+                  <li><a href="test.html">JavaScript</a></li>
+               </ul>
+            </nav>
+         </div>
+      </header>
+      <h2>Code Injection Defense</h2>
+      <p class="smallerP">This page temporarily fills in for the Reptiles page to meet the requirements for the Chapter #9 assignment, which states "Enhance the personal website you've created in the preceding chapters of this book to prevent security issues. To do this, review each form field in your site and identify any additional validation that you could reasonably add. In particular, look for situations where you could use a regular expression to limit the allowable characters in order to exclude characters used in creating JavaScript code."</p>
+      <p class="smallerP">All fields are required.</p>
+      <form novalidate>
+         <fieldset>
+            <div>
+               <label for="name">Name:</label>
+            </div>
+            <div class="leftspace">
+               <input type="text" id="name" required="required">
+            </div>
+            <div>
+               <label for="email">Email:</label>
+            </div>
+            <div class="leftspace">
+               <input type="email" id="email" required="required">
+            </div>
+            <div>
+               <label for="phone">Phone:</label>
+            </div>
+            <div class="leftspace">
+               <input type="tel" id="phone" required="required">
+               <label for="phone">10 digits only</label>
+            </div>
+            <div>
+               <label for="address">Address:</label>
+            </div>
+            <div class="leftspace">
+               <input type="text" id="address" required="required">
+            </div>
+            <div>
+               <label for="city">City:</label>
+            </div>
+            <div class="leftspace">
+               <input type="text" id="city" required="required">
+            </div>
+            <div>
+               <label for="state">State:</label>
+            </div>
+            <div class="leftspace">
+               <input type="text" id="state" required="required">
+            </div>
+            <div>
+               <label for="zip">Zip:</label>
+            </div>
+            <div class="leftspace">
+               <input type="text" id="zip" required="required">
+               <label for="zip">5 digits only</label>
+            </div>
+         </fieldset>
+         <div class="spacer"></div>
+         <div class="centereddiv">
+				<input type="submit" value="Submit" id="contactbutton">
+			</div>
+      </form>
+      <footer>
+         <p class="smallerP">© 2018 Robert Dobson</p>
+      </footer>
+      <script src="test.js"></script>
+   </body>
+</html>
