@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- 
+			CIS166AA: Chapter 10 Case Project Website
+			Author: Robert Dobson
+			Date: 11/11/2018
+      -->
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=page-width, initial-scale=1.0">
+      <title>Geolocation</title>
+      <link rel="stylesheet" href="styles.css" />
+   </head>
+   <body>
+      <header>
+         <div>
+            <nav>
+               <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="mammals.html">Mammals</a></li>
+                  <li><a href="birds.html">Birds</a></li>
+                  <li><a href="test.html">JavaScript</a></li>
+               </ul>
+            </nav>
+         </div>
+      </header>
+      <h2>A Map of Your Location</h2>
+      <p class="smallerP">This page uses geolocation to get the user's current location, displays the location on a map, and displays the latitude, longitude, and (should supposedly display) altitude. Just allow geolocation when prompted.</p>
+      <p class="smallerP">Come out, come out wherever you are...</p>
+      <div class="TextColor" id="map"></div>
+      <br>
+      <table>
+         <tr>
+            <td>Latitude: </td>
+            <td id="latit"></td>
+            <td>Longitude: </td>
+            <td id="longi"></td>
+            <td>Altitude: </td>
+            <td id="altit"></td>
+         </tr>
+      </table>
+      <footer>
+         <p class="smallerP">© 2018 Robert Dobson</p>
+      </footer>
+      <script type="text/javascript" src="map.js"></script> 
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGCql0HlN4C_D7B2BcIIhtuFvjrdfvoew&callback=initMap"></script>
+   </body>
+</html>
