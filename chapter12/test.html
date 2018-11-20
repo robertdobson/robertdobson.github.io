@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- 
+			CIS166AA: Chapter 12 Case Project Website
+			Author: Robert Dobson
+			Date: 11/18/2018
+      -->
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=page-width, initial-scale=1.0">
+      <title>jQuery</title>
+      <link rel="stylesheet" href="styles.css" />
+      <!--Import Javascript modernizer for older IE browsers-->
+      <script type="text/javascript" src="modernizr.custom.05819.js"></script>
+   </head>
+   <body>
+      <header>
+         <div>
+            <nav>
+               <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="mammals.html">Mammals</a></li>
+                  <li><a href="birds.html">Birds</a></li>
+                  <li><a href="test.html">JavaScript</a></li>
+               </ul>
+            </nav>
+         </div>
+      </header>
+      <h2>Working with jQuery</h2>
+      <p class="smallerP">This page temporarily fills in for the Reptiles page to meet the requirements for the Chapter #12 assignment, which states "In your individual website, revise a function to use jQuery selectors and methods. Identify a function that contains at least three selectors that you can replace with jQuery selectors, and that performs at least one DOM traversal or CSS change that you can replace with a jQuery method. Comment out the code you replace rather than deleting it."</p>
+      <p class="smallerP">The three selectors in my function that I replaced with jQuery selectors are the IDs demobutton, fadesin, and fadesout. Click the button to see the CSS changes made with jQuery methods, then view the test.js file to see the difference in code required between JavaScript and jQuery for these transitions.</p>
+      <div class="centereddiv">
+         <button id="demobutton">Show me the jQuery!</button>
+      </div>
+      <h1 id="fadesin">h1 element with "fadesin" ID fades in</h1>
+      <h2 id="fadesout">h2 element with "fadesout" ID fades out</h2>
+      <footer>
+         <p class="smallerP">© 2018 Robert Dobson</p>
+      </footer>
+      <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+      <script type="text/javascript" src="test.js"></script>
+   </body>
+</html>
