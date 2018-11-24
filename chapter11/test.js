@@ -11,5 +11,5 @@ ForexTicker.init(
         theme: "dark", //this can be "light" or "dark"
         margin: "auto",
         width: "40%",
-        height: "600px",
+        height: "350px",
   });
