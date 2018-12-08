@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- 
+			CIS166AA: Final Assignment - JavaScript Tutorial
+			Author: Robert Dobson
+			Date: 12/7/2018
+      -->
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=page-width, initial-scale=1.0">
+      <title>Arrays</title>
+      <link rel="stylesheet" href="styles.css" />
+      <link rel="stylesheet" href="highlight/styles/darcula.css">
+      <script src="highlight/highlight.pack.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script>
+   </head>
+   <body>
+      <header>
+         <div>
+            <!--<nav>
+               <ul>
+                  <li><a href="variables.html">&lt;Back</a></li>
+                  <li><a href="index.html">Index</a></li>
+                  <li><a href="arrays2.html">Next&gt;</a></li>
+               </ul>
+            </nav>-->
+         </div>
+      </header>
+      <div class="wrapper">
+         <h1>Arrays</h1>
+         <p>Arrays are data structures used to store ordered collections.</p>
+         <h2>Declaring an array</h2>
+         <p>There are two common ways for creating an empty array:</p>
+         <pre><code>let arr = new Array();</code></pre>
+         <pre><code>let arr = [];</code></pre>
+         <p>Almost all the time, the second syntax is used. We can supply initial elements in the brackets:</p>
+         <pre><code>let fruits = ["Apple", "Peach", "Pumpkin"];</code></pre>
+         <p>Array elements are numbered, starting with zero.<br>
+            We can get an element by its number in square brackets:</p>
+         <pre><code>let fruits = ["Apple", "Peach", "Pumpkin"];<br>
+alert( fruits[0] ); // Apple
+alert( fruits[1] ); // Peach
+alert( fruits[2] ); // Pumpkin</code></pre>
+         <!--<script async src="//jsfiddle.net/d05z9jft/embed/js,result/dark/"></script>-->
+         <!--<script async src="//jsfiddle.net/ROB2214523/758kr1e0/embed/js,result/dark/"></script>
+         <iframe width="100%" height="150" src="//jsfiddle.net/d05z9jft/embedded/js,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>-->
+         <iframe width="100%" height="150" src="//jsfiddle.net/ROB2214523/758kr1e0/embedded/js,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+         <p>Reeplacing an element:</p>
+         <pre><code>fruits[2] = 'Banana'; // now ["Apple", "Peach", "Banana"]</code></pre>
+         <p>Adding a new element to the array:</p>
+			<pre><code>fruits[3] = 'Lime'; // now ["Apple", "Peach", "Banana", "Lime"]</code></pre>
+         <p>The total count of the elements in the array is its length:</p>
+         <pre><code>let fruits = ["Apple", "Peach", "Banana", "Lime"];
+alert( fruits.length ); // 4</code></pre>
+         <p>Alert can also be used to show the whole array.</p>
+         <pre><code>let fruits = ["Apple", "Peach", "Banana", "Lime"];
+alert( fruits ); // Apple,Peach,Banana, Lime</code></pre>
+         <p>An array can store elements of any type. For example:</p>
+         <pre><code>// mix of values
+let arr = [ 'Apple', { name: 'John' }, true, function() { alert('hello'); } ];<br>
+// get the object at index 1 and then show its name
+alert( arr[1].name ); // John<br>
+// get the function at index 3 and run it
+arr[3](); // hello</code></pre>
+         <h2>Iterating through an array</h2>
+         <p>A <code>for</code> loop can be used to iterate the idices:</p>
+         <pre><code>let arr = ["Apple", "Orange", "Pear"];
+for (let i = 0; i < arr.length; i++) {
+  alert( arr[i] );
+}</code></pre>
+        <h2>Summary</h2>
+         </div>
+      <footer >
+         <p id="footerP">© 2018 Robert Dobson</p>
+      </footer>
+   </body>
+</html>
