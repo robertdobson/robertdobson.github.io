@@ -16,15 +16,6 @@
    </head>
    <body>
       <header>
-         <div>
-            <!--<nav>
-               <ul>
-                  <li><a href="variables.html">&lt;Back</a></li>
-                  <li><a href="index.html">Index</a></li>
-                  <li><a href="arrays2.html">Next&gt;</a></li>
-               </ul>
-            </nav>-->
-         </div>
       </header>
       <div class="wrapper">
          <h1>Arrays</h1>
@@ -34,41 +25,29 @@
          <pre><code>let arr = new Array();</code></pre>
          <pre><code>let arr = [];</code></pre>
          <p>Almost all the time, the second syntax is used. We can supply initial elements in the brackets:</p>
-         <pre><code>let fruits = ["Apple", "Peach", "Pumpkin"];</code></pre>
+         <pre><code>let animals = ["Dog", "Horse", "Lion"];</code></pre>
+         <h2>Accessing and modifying elements of an array</h2>
          <p>Array elements are numbered, starting with zero.<br>
             We can get an element by its number in square brackets:</p>
-         <pre><code>let fruits = ["Apple", "Peach", "Pumpkin"];<br>
-alert( fruits[0] ); // Apple
-alert( fruits[1] ); // Peach
-alert( fruits[2] ); // Pumpkin</code></pre>
-         <!--<script async src="//jsfiddle.net/d05z9jft/embed/js,result/dark/"></script>-->
-         <!--<script async src="//jsfiddle.net/ROB2214523/758kr1e0/embed/js,result/dark/"></script>
-         <iframe width="100%" height="150" src="//jsfiddle.net/d05z9jft/embedded/js,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>-->
-         <iframe width="100%" height="150" src="//jsfiddle.net/ROB2214523/758kr1e0/embedded/js,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+         <iframe width="100%" height="150" src="https://jsfiddle.net/ROB2214523/758kr1e0/5/embedded/js,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
          <p>Reeplacing an element:</p>
-         <pre><code>fruits[2] = 'Banana'; // now ["Apple", "Peach", "Banana"]</code></pre>
+         <pre><code>animals[2] = 'Tiger'; // now ["Dog", "Horse", "Tiger"]</code></pre>
          <p>Adding a new element to the array:</p>
-			<pre><code>fruits[3] = 'Lime'; // now ["Apple", "Peach", "Banana", "Lime"]</code></pre>
-         <p>The total count of the elements in the array is its length:</p>
-         <pre><code>let fruits = ["Apple", "Peach", "Banana", "Lime"];
-alert( fruits.length ); // 4</code></pre>
-         <p>Alert can also be used to show the whole array.</p>
-         <pre><code>let fruits = ["Apple", "Peach", "Banana", "Lime"];
-alert( fruits ); // Apple,Peach,Banana, Lime</code></pre>
+			<pre><code>animals[3] = 'Zebra'; // now ["Dog", "Horse", "Tiger", "Zebra"]</code></pre>
+         <p>The total count of the elements in the array can be called using length:</p>
+         <iframe width="100%" height="110" src="https://jsfiddle.net/ROB2214523/jkgzxf29/4/embedded/js,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+         <p>An alert can also be used to show the whole array.</p>
+         <iframe width="100%" height="110" src="https://jsfiddle.net/ROB2214523/jnhsxg4m/3/embedded/js,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
          <p>An array can store elements of any type. For example:</p>
-         <pre><code>// mix of values
-let arr = [ 'Apple', { name: 'John' }, true, function() { alert('hello'); } ];<br>
-// get the object at index 1 and then show its name
-alert( arr[1].name ); // John<br>
-// get the function at index 3 and run it
-arr[3](); // hello</code></pre>
-         <h2>Iterating through an array</h2>
-         <p>A <code>for</code> loop can be used to iterate the idices:</p>
-         <pre><code>let arr = ["Apple", "Orange", "Pear"];
-for (let i = 0; i < arr.length; i++) {
-  alert( arr[i] );
-}</code></pre>
-        <h2>Summary</h2>
+         <iframe width="100%" height="225" src="https://jsfiddle.net/ROB2214523/10gvLrft/4/embedded/js,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+         <h2>How to iterate through an array</h2>
+         <p>A <code>for</code> loop can be used to iterate the indices:</p>
+        <iframe width="100%" height="150" src="https://jsfiddle.net/ROB2214523/8a2v4Lw9/2/embedded/js,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+        <h3>Additional resources:</h3>
+        <a href="https://www.youtube.com/watch?v=rRgD1yVwIvE"><p class="centeredP">A YouTube video on working with JavaScript arrays</p></a>
+        <a href="https://www.w3schools.com/js/js_arrays.asp"><p class="centeredP">A page on JavaScript arrays from w3schools.com</p></a><br>
+        <h3>A final pearl of wisdom:</h3>
+        <a href="https://www.youtube.com/watch?v=b9434BoGkNQ"><p class="centeredP">Psst...click here for the pearl!</p></a><br>
          </div>
       <footer >
          <p id="footerP">© 2018 Robert Dobson</p>

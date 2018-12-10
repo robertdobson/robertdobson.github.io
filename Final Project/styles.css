@@ -9,6 +9,8 @@ a {
 	color: yellowgreen;
 	text-decoration: none;
 	font-size: 1.2em;
+	text-align: center;
+	align-content: center;
 }
 a:hover {
 	color: #7fc0fb;
@@ -59,7 +61,7 @@ h2 {
 	text-align: left;
 }
 h3 {
-	text-align: left;
+	text-align: center;
 }
 input {
 	text-align: left;
@@ -78,6 +80,10 @@ input[type=email] {
 }
 label {
 	padding: 1%;
+}
+li {
+	text-align: center;
+	align-content: center;
 }
 nav {
 	/*Horizontal Nav bar*/
@@ -132,6 +138,10 @@ td {
 	font-size: 1em;
 	padding: .7em;/*column-width: 10%;*/
 }
+ul {
+	text-align: center;
+	align-content: center;
+}
 .card {
 	flex: 0 0 auto;
 	background-color: #191919;
@@ -185,4 +195,8 @@ button {
 }
 #titleP {
 	text-align: center;
+}
+.centeredP {
+	text-align: center;
+	font-size: 1em;
 }
